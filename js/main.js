@@ -1,7 +1,7 @@
 let mainBox = document.querySelector('.box')
 let container = document.querySelector('#container')
 
-for(let i = 0; i < 9999; i++){
+for(let i = 0; i < 999; i++){
     container.append(mainBox.cloneNode())
 }
 
@@ -12,7 +12,7 @@ let sizeSlider = document.querySelector('.size-slider')
 let x = -10
 let y = -5
 let rot = 0
-let size = 100
+let size = 135
 
 
 skewSliderX.addEventListener('input', event => {
