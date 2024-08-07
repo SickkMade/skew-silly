@@ -84,25 +84,25 @@ footer {
 .box:hover{
      transition:all 0s;
 } 
-.box:nth-child(4n):hover{
+.box:nth-child(4n):hover, .box:nth-child(4n):active{
      background-color:lightcoral;
 }
-.box:nth-child(4n + 1):hover{
+.box:nth-child(4n + 1):hover, .box:nth-child(4n+1):active{
      background-color:rgb(250, 173, 114);
 }
-.box:nth-child(4n + 2):hover{
+.box:nth-child(4n + 2):hover, .box:nth-child(4n+2):active{
      background-color:yellow;
 }
-.box:nth-child(4n + 3):hover{
+.box:nth-child(4n + 3):hover, .box:nth-child(4n+3):active{
      background-color:yellowgreen;
 }
-.box:nth-child(7n + 5):hover{
+.box:nth-child(7n + 5):hover, .box:nth-child(7n+5):active{
      background-color:lightcyan;
 }
-.box:nth-child(7n + 3):hover{
+.box:nth-child(7n + 3):hover, .box:nth-child(7n+3):active{
      background-color:lightseagreen;
 }
-.box:nth-child(11n):hover{
+.box:nth-child(11n):hover, .box:nth-child(11n):active{
      background-color:lightslategray;
 }
 #container{
@@ -135,9 +135,15 @@ footer {
 
 @media (max-width:450px){
      #slider-container{
-          font-size:3rem;
-     }
-     .slider{
-          transform: scale(150%) translateX(20%);
+          font-size:1.75rem;
+          display:flex;
+          flex-flow:column;
+          width:100%;
+          padding-bottom:25px;
      }
 }
+/* @media(hover: none) and (pointer: coarse) {
+     body {
+         background: yellow;
+     }
+ } */
