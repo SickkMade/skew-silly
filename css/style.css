@@ -112,7 +112,8 @@ footer {
 }
 
 #slider-container{
-     position:absolute;
+     position:sticky;
+     width:fit-content;
      border: 2px white solid;
      background-color:black;
      top:0;
